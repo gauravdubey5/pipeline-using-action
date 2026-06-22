@@ -5,7 +5,6 @@ terraform {
       version = "4.73.0"
     }
   }
-
 }
 
 provider "azurerm" {
@@ -13,8 +12,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "resource_groups" {
-
-  name     = orange-rg
-  location = centralus
-
+  name     = "orange-rg"
+  location = "centralus"
 }
