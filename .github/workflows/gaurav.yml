@@ -21,6 +21,12 @@ jobs:
             # Azure tenant id
             tenant_id: 94068d3d-e158-4e7b-9393-feeaf9ac5cc6
 
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Verify Terraform
+        run: terraform version
+      
       - name: Terraform Init
         run: terraform init
 
