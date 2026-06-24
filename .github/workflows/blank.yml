@@ -1,5 +1,5 @@
 
-name: CI
+name: Dummy
 
 on:
 
@@ -15,7 +15,14 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: azure login
+        run: az login --service-principal --username 7ab6d6ea-b98a-4a42-9b95-2e12dc2a80fa --password 4a1dd29b-1364-4eaf-9d5f-3ccd287639c9 --tenant 94068d3d-e158-4e7b-9393-feeaf9ac5cc6
+      
+      - name: terraform init
+        run: terraform init
+
+      - name: terraform plan
+        run: terraform plan
+
+      - name: terraform apply
+        run: terraform apply -auto-approve
