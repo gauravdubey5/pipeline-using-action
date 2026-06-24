@@ -12,6 +12,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "resource_groups" {
-  name     = "orange-rg"
-  location = "centralus"
+  name     = "gauravaction-rg"
+  location = "centralindia"
 }
