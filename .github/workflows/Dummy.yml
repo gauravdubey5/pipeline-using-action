@@ -1,19 +1,23 @@
 
-name: Dummy
+name: Dummy Workflow
+
 
 on:
-
   workflow_dispatch:
+
 
 jobs:
   build:
     runs-on: self-hosted
 
+
     steps:
       - uses: actions/checkout@v4
 
+
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: echo "Hello, world!"
+
 
       - name: azure login
         run: az login --service-principal --username 7ab6d6ea-b98a-4a42-9b95-2e12dc2a80fa --password 4a1dd29b-1364-4eaf-9d5f-3ccd287639c9 --tenant 94068d3d-e158-4e7b-9393-feeaf9ac5cc6
