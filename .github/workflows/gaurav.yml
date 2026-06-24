@@ -27,6 +27,12 @@ jobs:
       - name: Verify Terraform
         run: terraform version
       
+      - name: Debug Files
+        run: |
+          pwd
+          ls -la
+          find . -name "*.tf"
+      
       - name: Terraform Init
         run: terraform init
 
