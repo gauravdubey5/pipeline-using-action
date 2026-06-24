@@ -15,7 +15,7 @@ jobs:
             # Azure client id
             client_id: 7ab6d6ea-b98a-4a42-9b95-2e12dc2a80fa
             # Azure client secret
-            client_secret: 0ff31adc-5d30-47a5-843b-407c5280ee91
+            client_secret: YCY8Q~l3dNLzf6zi1-U-fytT08LuA38WKfHKdaxC
             # Azure subscription id
             subscription_id: 210ae65d-cb56-414b-a96e-c11a9a472e8d
             # Azure tenant id
