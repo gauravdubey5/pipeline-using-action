@@ -10,8 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run a one-line script
-        run: echo "Hello, world!"
 
       - name: azure login
         run: az login --service-principal --username 7ab6d6ea-b98a-4a42-9b95-2e12dc2a80fa --password 59t8Q~_tvhTU2YXzihDORZtLr6XFhI2WIDWtYcqQ --tenant 94068d3d-e158-4e7b-9393-feeaf9ac5cc6
