@@ -1,16 +1,17 @@
+name: Test
+
 on:
   workflow_dispatch:
+
 jobs:
   my_job:
-    name: deploy to staging
     runs-on: self-hosted
-    steps:
-    - name: Run a one-line script
-      run: echo Hello, world!
 
-   
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-  
+    steps:
+      - name: Run one-line script
+        run: echo Hello, world!
+
+      - name: Run multi-line script
+        run: |
+          echo Add other actions to build
+          echo test, and deploy your project.
