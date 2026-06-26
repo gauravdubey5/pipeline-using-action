@@ -1,19 +1,23 @@
-name: Test
+name: Deploy to Staging
 
 on:
   workflow_dispatch:
 
 jobs:
   my_job:
-    runs-on: self-hosted
+    name: Deploy to Staging
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Run one-line script
-        run: echo Hello, world!
-
-      - name: Run multi-line script
-        run: |
-          echo Add other actions to build
-          echo test, and deploy your project.
+      - name: Login to Azure
+        uses: hyperskill/azure-login@v3.0.0
+        with:
+            # Azure client id
+            client_id: ef918e69-be10-4267-9ac6-87000e61deb6
+            # Azure client secret
+            client_secret: 38A8Q~U~aTmk33LX5b0KdO8NaGRS0Y_fWKG.3bqo
+            # Azure subscription id
+            subscription_id: bc401604-b6cc-41b5-8eb3-22ccca3b29ff
+            # Azure tenant id
+            tenant_id: 36df4507-8aab-483e-88d3-d7982c300017
+    
